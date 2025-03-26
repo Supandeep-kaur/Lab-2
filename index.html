@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date Function Example</title>
+</head>
+<body>
+    <h1>JavaScript Date Function Demo</h1>
+
+    <!-- A button to trigger the function and show current date and time -->
+    <button onclick="displayCurrentDate()">Click to Display Current Date and Time</button>
+
+    <p id="currentDate"></p>
+
+    <script>
+        // Function to display the current date and time
+        function displayCurrentDate() {
+            // Create a new Date object
+            let currentDate = new Date();
+            
+            // Get the current date and time in a human-readable format
+            let formattedDate = "Current Date and Time: " + currentDate.toString();
+            
+            // Display the current date and time in the HTML
+            document.getElementById("currentDate").innerHTML = formattedDate;
+        }
+    </script>
+</body>
+</html>
